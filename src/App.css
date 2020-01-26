@@ -1,3 +1,69 @@
+body{
+	background-image: url('./cherryBlossomPattern.png');
+}
 .App {
   text-align: center;
+  margin: 1rem;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+}
+form{
+	display: flex;
+	flex-flow: nowrap column;
+	border: 1px solid #c33;
+	border-radius: 10px;
+	padding: 1rem;
+	min-width: 254px;
+	background-color: rgba(254, 80, 12, 60%);
+	backdrop-filter: blur(3px);
+}
+input{
+	border-color: #82c;
+	border-radius: 15px;
+	background-color: #000;
+	color: #82c;
+	margin: .5rem;
+	padding: .25rem;
+	text-align: center;
+	font-weight: bold;
+}
+ul{
+	border: 1px solid #c33;
+	border-radius: 10px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	list-style-type: none;
+	min-width: 254px;
+	background-color: rgba(50, 0, 90, 70%);
+	backdrop-filter: blur(3px);
+}
+li{
+	border: 1px solid;
+	border-radius: 10px;
+	color: rgba(230, 50, 110, 100%);
+	padding: .5rem;
+	background-color: rgba(100, 240, 255, 40%);
+	margin: .25rem;
+	margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 361px){
+	form, ul{
+		min-width: 300px;
+	}
+}
+
+@media screen and (min-width: 401px){
+	form, ul{
+		min-width: 348px;
+	}
+}
+
+@media screen and (min-width: 768px){
+	form, ul{
+		width: 40%;
+		max-width: 800px;
+	}
 }
